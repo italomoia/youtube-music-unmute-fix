@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: The original bug report on Reddit
+    url: https://www.reddit.com/r/YoutubeMusic/comments/1sq7g73/music_gets_muted_when_i_skip_songs_on_my_browser/
+    about: Other people hitting the same YouTube Music bug.
+  - name: The bug on Google's own support forum
+    url: https://support.google.com/youtubemusic/thread/394301860/sound-mutes-when-i-switch-tracks-manually
+    about: Report it to Google too. The more reports, the sooner they fix the root cause.

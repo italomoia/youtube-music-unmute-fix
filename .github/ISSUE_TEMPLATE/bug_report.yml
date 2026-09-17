@@ -1,0 +1,61 @@
+name: Bug report
+description: The extension is installed but something is wrong
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please fill this in even if it feels obvious, it saves a round trip.
+
+        If the problem also happens with the extension removed, it is a YouTube Music bug and not
+        this project's. Please report it to Google instead.
+  - type: textarea
+    id: what-happens
+    attributes:
+      label: What happens
+      description: What did you do, and what did the browser do?
+      placeholder: I pressed next, the song changed, no sound came out.
+    validations:
+      required: true
+  - type: dropdown
+    id: when
+    attributes:
+      label: When does it happen?
+      options:
+        - When I skip manually
+        - When the track changes on its own
+        - Both
+        - Something else (explain above)
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: "Open chrome://version and copy the first line."
+      placeholder: Chrome 152.0.7300.45 (64-bit)
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11 / macOS 15 / Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Console errors (optional)
+      description: "Press F12, open the Console tab, and paste anything red."
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I reloaded the YouTube Music tab after installing the extension.
+          required: true
+        - label: The extension card is switched on in chrome://extensions.
+          required: true

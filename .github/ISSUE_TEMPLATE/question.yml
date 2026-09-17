@@ -1,0 +1,21 @@
+name: Question
+description: Installation help or anything you did not understand in the README
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No such thing as a dumb question here. This extension is meant for people who do not code.
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you stuck on?
+      description: Tell us which step of the README you are on and what you see on screen.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: Chrome, Edge, Brave...

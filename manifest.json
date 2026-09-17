@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Music anti-mute",
+  "version": "1.0.0",
+  "description": "Undoes the mute that the YouTube Music web player applies to itself when you skip to the next song.",
+  "homepage_url": "https://github.com/italomoia/youtube-music-unmute-fix",
+  "content_scripts": [
+    {
+      "matches": ["https://music.youtube.com/*"],
+      "js": ["antimute.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": false
+    }
+  ]
+}
