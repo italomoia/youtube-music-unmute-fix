@@ -5,7 +5,7 @@ fixes it. You install it once and forget about it.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-🇧🇷 **Instruções em português mais abaixo** ([clique aqui](#-instruções-em-português-brasil)).
+🇧🇷 **Instruções em português mais abaixo** ([clique aqui](#-instruções-em-português-clique-para-abrir)).
 
 ---
 
@@ -84,8 +84,6 @@ Open `chrome://extensions`, find the **"YouTube Music anti-mute"** card and clic
 Nothing is left behind.
 
 ---
-
-<a name="-instruções-em-português-brasil"></a>
 
 <details>
 <summary><h2>🇧🇷 Instruções em português (clique para abrir)</h2></summary>
