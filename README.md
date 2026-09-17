@@ -32,8 +32,8 @@ A file called `youtube-music-unmute-fix-main.zip` lands in your Downloads folder
 
 **Step 2. Unzip it.**
 Double-click the file you just downloaded (on Windows, right-click it and choose "Extract All").
-You now have a **folder** called `youtube-music-unmute-fix-main`. Remember where it is, and do not
-delete it later: Chrome reads the extension from this folder every time it starts.
+You now have a **folder** whose name starts with `youtube-music-unmute-fix`. Remember where it is,
+and do not delete it later: Chrome reads the extension from this folder every time it starts.
 
 **Step 3. Open the extensions page in Chrome.**
 Copy `chrome://extensions` into the address bar and press Enter.
@@ -111,8 +111,9 @@ Um arquivo chamado `youtube-music-unmute-fix-main.zip` vai cair na sua pasta de 
 
 **Passo 2. Descompacte.**
 Clique duas vezes no arquivo que você acabou de baixar (no Windows, clique com o botão direito e
-escolha "Extrair tudo"). Agora você tem uma **pasta** chamada `youtube-music-unmute-fix-main`.
-Guarde bem onde ela está e não apague depois: o Chrome lê a extensão dessa pasta toda vez que abre.
+escolha "Extrair tudo"). Agora você tem uma **pasta** cujo nome começa com
+`youtube-music-unmute-fix`. Guarde bem onde ela está e não apague depois: o Chrome lê a extensão
+dessa pasta toda vez que abre.
 
 **Passo 3. Abra a página de extensões do Chrome.**
 Copie `chrome://extensions` na barra de endereço e aperte Enter.
