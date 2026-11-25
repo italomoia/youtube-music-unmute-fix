@@ -7,6 +7,8 @@
   let lastLoadAt = 0;
   let lastUserMuteAt = 0;
   let undone = 0;
+  let playerUnmuted = 0;
+  let unmutingPlayer = false;
 
   const isVolumeControl = (el) => {
     if (!el || !el.closest) return false;
@@ -49,13 +51,24 @@
         if (desc.get.call(this) === true && now - lastUserMuteAt >= USER_INTENT_WINDOW) {
           desc.set.call(this, false);
           undone++;
+          const player = document.querySelector('#movie_player');
+          if (!unmutingPlayer && player && typeof player.unMute === 'function' &&
+              typeof player.isMuted === 'function' && player.isMuted() === true) {
+            unmutingPlayer = true;
+            try {
+              player.unMute();
+              playerUnmuted++;
+            } finally {
+              unmutingPlayer = false;
+            }
+          }
         }
       });
     }
   });
 
   Object.defineProperty(window, '__ytmAntimute', {
-    value: { get undone() { return undone; }, get lastLoadAt() { return lastLoadAt; } },
+    value: { get undone() { return undone; }, get playerUnmuted() { return playerUnmuted; }, get lastLoadAt() { return lastLoadAt; } },
     configurable: true
   });
 })();
